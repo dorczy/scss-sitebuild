@@ -2,16 +2,6 @@
 @import "mixins/mixins";
 @import "variables/variables";
 
-//nav Gergő-féle kódja
-
-//d-flex, justify-content-center, align-items-center
-//flex-column, flex-row
-//flex-lg-row
-
-//btn, btn-lg
-
-//modal részei
-
 @include generate-container();
 @include column-default-style();
 @include generate-columns();
@@ -22,6 +12,7 @@
 @include generate-text-aligns();
 @include generate-font-weights();
 @include generate-display-classes();
+@include generate-flex-direction();
 
 @import "navbar";
 @import "multkori";

@@ -48,4 +48,10 @@ $config: (
             4: 3.5rem,
         ),
     ),
+    flex: (
+        direction: (
+            row: row,
+            column: column,
+        ),
+    ),
 );

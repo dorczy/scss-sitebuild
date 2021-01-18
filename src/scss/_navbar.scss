@@ -10,28 +10,23 @@
     transition: all .3s ease;
 
     &__container {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
+        width: 20rem;
 
         @media screen and (min-width: var(grid-breakpoint-desktop)) {
             display: flex;
             justify-content: space-between;
         }
-
-        // padding: 0.5rem 1rem;
-
-        // flex-flow: row nowrap;
-        // justify-content: flex-start;
-
-
     }
 
     &__brand {
         text-decoration: none;
         color: var(base-yellow, $colors);
+        justify-content: center;
+        align-items: center;
 
         &:hover {
             color: var(base-white, $colors);
@@ -49,12 +44,11 @@
         @media screen and (min-width: var(grid-breakpoint-desktop)) {
             display: flex;
             flex-direction: row;
-            width: auto;
         }
     }
 
     &__item {
-        text-align: center;
+        text-align: left;
     }
 
     &__link {
@@ -77,6 +71,7 @@
     
             &:checked + .nav__list {
                 display: flex;
+                width: 10rem;
             }
         }
     

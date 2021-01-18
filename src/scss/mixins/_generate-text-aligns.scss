@@ -3,5 +3,10 @@
         .text-#{$key} {
             text-align: $value;
         }
+        .text-#{var(column-postfix-desktop)}-#{$key} {   //text-lg-left
+            @include desktop-up {
+                text-align: $value;
+            }
+        }
     }
 };

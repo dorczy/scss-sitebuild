@@ -1,0 +1,12 @@
+@mixin generate-flex-direction($flex-directions: var(flex-direction)) {
+    @each $key, $value in $flex-directions {  //row row
+        .flex-#{$key} {  //flex-row
+            flex-direction: $value;
+        }
+        .flex-#{var(column-postfix-desktop)}-#{$key} {   //flex-lg-row
+            @include desktop-up {
+                flex-direction: $value;
+            }
+        }
+    }
+}
