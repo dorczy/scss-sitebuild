@@ -1,0 +1,104 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all .3s ease;
+
+    &__container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (min-width: var(grid-breakpoint-desktop)) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        // padding: 0.5rem 1rem;
+
+        // flex-flow: row nowrap;
+        // justify-content: flex-start;
+
+
+    }
+
+    &__brand {
+        text-decoration: none;
+        color: var(base-yellow, $colors);
+
+        &:hover {
+            color: var(base-white, $colors);
+        }
+    }
+
+    &__list {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        @media screen and (min-width: var(grid-breakpoint-desktop)) {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link {
+        color: var(base-gray, $colors);
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        display: block;
+        line-height: 1rem;
+        padding: .5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: var(base-white, $colors);
+        }
+    }
+
+    &__hamburger {
+        &--checkbox {
+            display: none;
+    
+            &:checked + .nav__list {
+                display: flex;
+            }
+        }
+    
+        &--label {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            padding: 0.75rem;
+            width: 1.5rem;
+        
+            @media screen and (min-width: var(grid-breakpoint-desktop)) {
+                display: none;
+            }
+        }
+    
+        &--line {
+            background: var(nav-linkColor, $colors);
+            display: block;
+            height: 2px;
+            width: 1.5rem;
+        }
+    }
+}

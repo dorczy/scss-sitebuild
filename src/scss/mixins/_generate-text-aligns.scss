@@ -1,0 +1,7 @@
+@mixin generate-text-aligns($text-aligns: var(align)) {
+    @each $key, $value in $text-aligns {  //left left
+        .text-#{$key} {
+            text-align: $value;
+        }
+    }
+};

@@ -1,0 +1,9 @@
+@mixin generate-display-classes($display-classes: var(display-fontSize)) {
+    @each $key, $value in $display-classes {  //1 6rem
+        .display-#{$key} {
+            font-size: $value;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    }
+};

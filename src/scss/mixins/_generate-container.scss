@@ -1,0 +1,17 @@
+@mixin generate-container {
+    .#{var(container-classname)} {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;  //növekedés, zsugorodás, kezdeti méret
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: var(container-padding);
+        position: relative;
+        max-width: var(container-maxWidth-mobile);
+        
+        @include desktop-up {
+            max-width: var(container-maxWidth-desktop);
+        }
+    }
+}

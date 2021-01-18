@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Mulish&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section__top {
+    background-image: url("../img/bg-pattern.png"), linear-gradient(90deg, rgb(218, 36, 49), rgb(122, 67, 151));
+    background-repeat: repeat;
+    padding-bottom: 9rem;
+    padding-top: 6rem;
+}
+main {
+    padding-top: 4rem;
+}
+
+.store__img {
+    width: 15rem;
+}
+
+.card-icon {
+    color: var(icons-icons, $colors);
+}
+
+.section {
+    &__start {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../img/bg-cta.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    &__social {
+        background-color: var(base-yellow, $colors);
+    }
+}
+
+.heart {
+    color: var(base-red, $colors);
+    font-size: 6rem;
+    font-family: 'Segoe UI';
+}
+
+.fa-twitter {
+    color: var(base-white, $colors);
+    background-color: var(icons-twitter, $colors);
+    padding: 1rem;
+    border-radius: 100%;
+    opacity: .9;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.fa-facebook-f {
+    color: var(base-white, $colors);
+    background-color: var(icons-facebook, $colors);
+    padding: 1rem 1.5rem;
+    border-radius: 100%;
+    opacity: .9;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.fa-google-plus-g {
+    color: var(base-white, $colors);
+    background-color: var(icons-googleplus, $colors);
+    padding: 1.1rem .8rem;
+    border-radius: 100%;
+    opacity: .9;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
+.bottom-nav-link {
+    color: var(base-muted, $colors);
+    
+    &:hover {
+        color: var(base-yellow, $colors);
+    }
+}
+
+.phone {
+    background-image: url("../img/demo-screen-1.jpg"), url("../img/phone.png");
+    width: 350px;
+    height: 700px;
+    background-size: 86%, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+.headline {
+    font-family: 'Catamaran', Helvetica, Arial, sans-serif;
+}
+.span, .card-text {
+    font-family: 'Mulish', Helvetica, Arial, sans-serif;
+}
+.button {
+    border-radius: 100px;
+    transition: all .3s ease;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: var(base-yellow, $colors);
+        border-color: var(base-yellow, $colors);
+    }
+}

@@ -1,0 +1,59 @@
+@mixin generate-spacing($property) {
+    $spacings: var(spacing);
+
+    @if $property == padding {
+        @each $num, $spacing in $spacings {  //pl. 1  0.25rem
+            .p-#{$num} {  //.p-1
+                padding: $spacing;
+            }
+            .px-#{$num} {  //.px-1
+                padding-right: $spacing;
+                padding-left: $spacing;
+            }
+            .py-#{$num} {  //.py-1
+                padding-top: $spacing;
+                padding-bottom: $spacing;
+            }
+            .pt-#{$num} {  //.pt-1
+                padding-top: $spacing;
+            }
+            .pb-#{$num} {  //.pb-1
+                padding-bottom: $spacing;
+            }
+            .pr-#{$num} {  //.pr-1
+                padding-right: $spacing;
+            }
+            .pl-#{$num} {  //.pl-1
+                padding-left: $spacing;
+            }
+        }
+    }
+    @if $property == margin {
+        @each $num, $spacing in $spacings {  //pl. 1  0.25rem
+            .m-#{$num} {  //.p-1
+                margin: $spacing;
+            }
+            .mx-#{$num} {  //.p-1
+                margin-right: $spacing;
+                margin-left: $spacing;
+            }
+            .my-#{$num} {  //.p-1
+                margin-top: $spacing;
+                margin-bottom: $spacing;
+            }
+            .mt-#{$num} {  //.mt-1
+                margin-top: $spacing;
+            }
+            .mb-#{$num} {  //.mb-1
+                margin-bottom: $spacing;
+            }
+            .mr-#{$num} {  //.mr-1
+                margin-right: $spacing;
+            }
+            .ml-#{$num} {  //.ml-1
+                margin-left: $spacing;
+            }
+        }
+    }
+
+}

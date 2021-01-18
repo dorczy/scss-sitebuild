@@ -1,0 +1,7 @@
+@mixin generate-font-weights($font-weights: var(fontWeight)) {
+    @each $key, $value in $font-weights {  //normal 400
+        .text-weight-#{$key} {
+            font-weight: $value;
+        }
+    }
+};

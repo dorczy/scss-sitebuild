@@ -1,0 +1,22 @@
+@mixin generate-columns {
+    $postfixes: var(column-postfix);  //lg
+    $grid-size: var(grid-size);  //12
+    
+    @for $i from 1 through $grid-size {  //12-ig megy
+        .#{var(column-classname)}-#{$i} {
+            $width: 100% * $i / $grid-size;
+            width: $width;
+        }
+    }
+    
+    @each $name, $postfix in $postfixes {  //pl. desktop, lg
+        @for $i from 1 through $grid-size {  //12-ig megy
+            .#{var(column-classname)}-#{$postfix}-#{$i} {  //col-lg-1, 2, 3, ...
+                @include desktop-up {
+                    $width: 100% * $i / $grid-size;
+                    width: $width;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin generate-colored-texts($base-palette: var(base, $colors)) {
+    @each $key, $value in $base-palette {  //"white" #FFFFFF
+        .text-#{$key} {
+            color: $value;
+        }
+    }
+};
