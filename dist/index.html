@@ -1,9 +1,9 @@
-<!doctype html>
-<html lang="hu">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d0f05553fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>SITEBUILDING</title>
@@ -12,7 +12,7 @@
 <body>
     <section class="section__top">
         <nav class="nav py-3 px-5">
-            <a class="nav__brand" href="#">Start Bootstrap</a>
+            <a class="nav__brand d-flex justify-content-center align-items-center" href="#">Start Bootstrap</a>
             <div class="nav__container">
     
                 <label class="nav__hamburger--label" for="menu">
@@ -38,7 +38,7 @@
 
         <main>
             <div class="container d-flex flex-column flex-lg-row">
-                <div class="d-flex justify-content-center align-items-center flex-column col-12 col-lg-8 my-5">
+                <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row col-12 col-lg-8 my-5">
                     <div class="row">
                         <div class="col-12 col-lg-8 offset-lg-2 text-center text-lg-left">
                             <h1 class="headline font-weight-normal text-white my-5">
@@ -148,7 +148,7 @@
     </section>
 
     <section class="section__social py-6 text-center" id="contact">
-        <div class="container">
+        <div class="container flex-column">
             <div class="row">
                 <div class="col-12">
                     <h1 class="headline display-4">We <span class="heart">&hearts;</span> new friends!</h1>
@@ -167,22 +167,22 @@
         </div>
     </section>
 
-    <footer class="footer bg-dark text-center py-4">
+    <footer class="footer bg-darkGray d-flex align-items-center justify-content-center py-4">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <small class="text-muted">© Your Website 2018. All Rights Reserved.</small>
-                    <ul class="justify-content-center">
+                    <ul class="nav__bottom">
                         <li class="nav-item">
-                            <a class="nav-link bottom-nav-link" href="#" data-toggle="modal"
+                            <a class="nav-link nav__bottom--link" href="#" data-toggle="modal"
                                 data-target="#privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bottom-nav-link" href="#" data-toggle="modal"
+                            <a class="nav-link nav__bottom--link" href="#" data-toggle="modal"
                                 data-target="#terms">Terms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bottom-nav-link" href="#" data-toggle="modal" data-target="#faq">FAQ</a>
+                            <a class="nav-link nav__bottom--link" href="#" data-toggle="modal" data-target="#faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -190,7 +190,7 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
+<!--     <div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header border-0 bg-dark text-white">
@@ -251,8 +251,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <script src="../src/js/navbar.js"></script>
 </body>
 
 </html>

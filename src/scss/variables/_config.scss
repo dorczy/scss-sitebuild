@@ -8,7 +8,7 @@ $config: (
     container: (
         classname: container,  //ezt az osztálynevet fogjuk használni, amikor a container-t legeneráltatjuk
         maxWidth: (
-            mobile: 960px,
+            mobile: 720px,
             desktop: 1280px
         ),
         padding: 15px,
@@ -47,6 +47,14 @@ $config: (
             3: 4.5rem,
             4: 3.5rem,
         ),
+    ),
+    headingTags: (
+        h1: 2.5rem,
+        h2: 2rem,
+        h3: 1.75rem,
+        h4: 1.5rem,
+        h5: 1.25rem,
+        h6: 1rem,
     ),
     flex: (
         direction: (

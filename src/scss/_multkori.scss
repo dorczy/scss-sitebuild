@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Mulish&display=swap');
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -81,13 +80,6 @@ main {
 .footer {
     font-family: 'Mulish', Helvetica, Arial, sans-serif;
 }
-.bottom-nav-link {
-    color: var(base-muted, $colors);
-    
-    &:hover {
-        color: var(base-yellow, $colors);
-    }
-}
 
 .phone {
     background-image: url("../img/demo-screen-1.jpg"), url("../img/phone.png");
@@ -136,6 +128,13 @@ main {
     }
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid var(base-gray, $colors);
+}
+.w-25 {
+    width: 25%;
+}
 
 .row {
     display: flex;
